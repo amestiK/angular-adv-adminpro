@@ -8,4 +8,15 @@ import { Component } from '@angular/core';
 })
 export class Grafica1Component {
 
+  public strings1: string[] = [ 'Pan', 'Refresco', 'Tacos' ];
+
+  public data1 = {
+    labels: this.strings1,
+    datasets: [
+      { data: [ 350, 450, 600 ],
+      backgroundColor: ['#9e1203','#FF5800', '#FFB414']
+      },
+
+    ]
+  };
 }
